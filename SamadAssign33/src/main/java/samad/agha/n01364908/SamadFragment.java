@@ -1,18 +1,22 @@
 package samad.agha.n01364908;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Path;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SamadFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class SamadFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -34,11 +38,11 @@ public class SamadFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SamadFragment.
+     * @return A new instance of fragment n01364908Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SamadFragment newInstance(String param1, String param2) {
-        SamadFragment fragment = new SamadFragment();
+    public static n01364908Fragment newInstance(String param1, String param2) {
+        n01364908Fragment fragment = new n01364908Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,25 +66,4 @@ public class SamadFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_samad, container, false);
     }
 
-
-
-    public void pencil(View view){
-
-    }
-
-    public void eraser(View view){
-
-    }
-
-    public void redColour(View view){
-
-    }
-
-    public void greenColour(View view){
-
-    }
-
-    public void yellowColour(View view){
-
-    }
 }

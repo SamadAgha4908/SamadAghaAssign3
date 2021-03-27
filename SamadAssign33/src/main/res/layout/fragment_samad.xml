@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFAD8"
-    tools:context=".SamadFragment">
+    tools:context=".SamadActivity">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,8 +16,17 @@
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <samad.agha.n01364908.CanvasView
+            android:id="@+id/signature_canvas"
+            android:layout_width="359dp"
+            android:layout_height="560dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -30,12 +39,14 @@
 
 
     <Button
+        android:id="@+id/button1"
         android:layout_width="61dp"
         android:layout_height="59dp"
         android:layout_marginStart="112dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/ic_erase"
         android:backgroundTint="#ff0000"
+        android:onClick="clearCanvas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

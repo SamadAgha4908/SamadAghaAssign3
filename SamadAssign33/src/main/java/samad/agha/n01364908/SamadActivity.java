@@ -1,5 +1,7 @@
 package samad.agha.n01364908;
 
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,7 +18,8 @@ import android.view.View;
 import samad.agha.n01364908.ui.main.SectionsPagerAdapter;
 
 public class SamadActivity extends AppCompatActivity {
-
+    public static Paint mPaint = new Paint();
+    private CanvasView customCanvas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,14 +29,31 @@ public class SamadActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = findViewById(R.id.fab);
+        customCanvas = (CanvasView) findViewById(R.id.canvas);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+    }
+
+    public void redColor(View view){
+        mPaint.setColor(Color.RED);
+        currentColor(mPaint.getColor());
+
+    }
+
+    public void blueColor(View view){
+
+    }
+
+    public void greenColor(View view){
+
+    }
+
+    public void currentColor(int c){
+
+    }
+
+
+    public void clearCanvas(View view){
+        customCanvas = (CanvasView) findViewById(R.id.signature_canvas);
+        customCanvas.resetPath();
     }
 }
