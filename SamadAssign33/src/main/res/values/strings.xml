@@ -1,9 +1,28 @@
+<!--Samad Agha n01364908 C-->
 <resources>
     <string name="app_name">SamadAssign3</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
-    <string name="redColour">red</string>
+    <string name="redColor">red</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Samad Agha n01364908</string>
+    <string name="guyholdingd">GuyHoldingD</string>
+    <string name="spin">Spin</string>
+    <string name="earth">earth</string>
+    <string name="moon">earth</string>
+
+    <string name="ex3_title_label">Tween</string>
+    <string name="starttxt">Starting animation</string>
+    <string name="stoptxt">Stopping animation</string>
+
+    <string name="ex2_title_label">Frame by Frame</string>
+    <string name="startanim_txt">Start Animation</string>
+    <string name="stopanim_txt">Stop Animation</string>
+    <string name="earthpic">Earthpic</string>
+    <string name="starttween">Start</string>
+    <string name="stoptween">Stop</string>
+    <string name="lastname">Agha</string>
+    <string name="firstname">Samad</string>
+    <string name="moonpic">moonpic</string>
 </resources>

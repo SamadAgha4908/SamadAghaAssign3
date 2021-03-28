@@ -26,6 +26,17 @@
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="126dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="216dp"
+            android:layout_marginTop="440dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/signature_canvas"
+            app:srcCompat="@drawable/draw" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -57,17 +68,58 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/ic_pencil"
         android:backgroundTint="#ff0000"
+        android:onClick="blackColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/button_colour1"
+        android:backgroundTint="@color/black"
+
+        android:onClick="s3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/button_colour1"
+
+        android:backgroundTint="@color/black"
+        android:onClick="s2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton3"
+        android:layout_width="21dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/button_colour1"
+
+        android:backgroundTint="@color/black"
+        android:onClick="s1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
         android:layout_width="57dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginEnd="152dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_colour1"
-        android:backgroundTint="@color/red"
 
+        android:backgroundTint="@color/red"
+        android:onClick="redColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -76,9 +128,9 @@
         android:layout_height="57dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="16dp"
-
         android:background="@drawable/button_colour1"
         android:backgroundTint="@color/green"
+        android:onClick="greenColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -87,9 +139,9 @@
         android:layout_height="57dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-
         android:background="@drawable/button_colour1"
         android:backgroundTint="@color/blue"
+        android:onClick="blueColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
