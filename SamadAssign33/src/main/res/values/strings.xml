@@ -25,4 +25,9 @@
     <string name="lastname">Agha</string>
     <string name="firstname">Samad</string>
     <string name="moonpic">moonpic</string>
+    <string name="startframe">Start</string>
+    <string name="stopframe">Stop</string>
+    <string name="bananadance">bananaDance</string>
+    <string name="ExitConfirm">Are you sure you want to leave</string>
+    <string name="ExitConfirmTitle">Exit App</string>
 </resources>
