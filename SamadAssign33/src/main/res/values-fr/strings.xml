@@ -1,0 +1,39 @@
+<!--Samad Agha n01364908 C-->
+<resources>
+    <string name="app_name">SamadAssign3</string>
+    <string name="tab_text_1">Canvas</string>
+    <string name="tab_text_2">Frames</string>
+    <string name="tab_text_3">Tween</string>
+    <string name="redColor">red</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Samad Agha n01364908</string>
+    <string name="guyholdingd">GuyHoldingD</string>
+    <string name="spin">Spin</string>
+    <string name="earth">la terre</string>
+    <string name="moon">lune</string>
+
+    <string name="ex3_title_label">Tween</string>
+    <string name="starttxt">Starting animation</string>
+    <string name="stoptxt">Stopping animation</string>
+
+    <string name="ex2_title_label">Frame by Frame</string>
+    <string name="startanim_txt">Démarrer lanimation</string>
+    <string name="stopanim_txt">arrêter lanimation</string>
+    <string name="earthpic">Earthpic</string>
+    <string name="starttween">Démarrer</string>
+    <string name="stoptween">arrêter</string>
+    <string name="lastname">Agha</string>
+    <string name="firstname">Samad</string>
+    <string name="moonpic">moonpic</string>
+    <string name="startframe">Start</string>
+    <string name="stopframe">Stop</string>
+    <string name="bananadance">bananaDance</string>
+    <string name="ExitConfirm">Êtes-vous sûr de vouloir quitter</string>
+    <string name="ExitConfirmTitle">Exit App</string>
+    <string name="request_permission">Request Permission</string>
+    <string name="speed1">1s</string>
+    <string name="speed2">2s</string>
+    <string name="speed3">3s</string>
+    <string name="speed4">4s</string>
+    <string name="avatar">avatar</string>
+</resources>
