@@ -9,7 +9,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/canvas"
+        android:id="@+id/samadcanvas"
         android:layout_width="359dp"
         android:layout_height="560dp"
         android:background="@color/white"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <samad.agha.n01364908.CanvasView
-            android:id="@+id/signature_canvas"
+            android:id="@+id/SamadDrawingcanvas"
             android:layout_width="359dp"
             android:layout_height="560dp"
             android:layout_marginBottom="8dp"
@@ -33,13 +33,15 @@
             android:layout_height="138dp"
             android:layout_marginStart="216dp"
             android:layout_marginTop="440dp"
+            android:contentDescription="@string/avatar"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/signature_canvas"
+            app:layout_constraintTop_toTopOf="@+id/SamadDrawingcanvas"
             app:srcCompat="@drawable/draw" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
+        android:id="@+id/samadTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -50,7 +52,7 @@
 
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/samadbuttonclear"
         android:layout_width="61dp"
         android:layout_height="59dp"
         android:layout_marginStart="112dp"
@@ -62,6 +64,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/samadbuttondraw"
         android:layout_width="61dp"
         android:layout_height="59dp"
         android:layout_marginStart="28dp"
@@ -73,19 +76,20 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/samadsize1"
         android:layout_width="42dp"
         android:layout_height="43dp"
         android:layout_marginEnd="160dp"
         android:layout_marginBottom="96dp"
         android:background="@drawable/button_colour1"
-        android:backgroundTint="@color/black"
 
+        android:backgroundTint="@color/black"
         android:onClick="s3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
+        android:id="@+id/samadsize2"
         android:layout_width="32dp"
         android:layout_height="33dp"
         android:layout_marginEnd="96dp"
@@ -98,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton3"
+        android:id="@+id/samadsize3"
         android:layout_width="21dp"
         android:layout_height="22dp"
         android:layout_marginEnd="32dp"
@@ -111,7 +115,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/samadred"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="152dp"
@@ -124,6 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/samadgreen"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="84dp"
@@ -135,6 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/samadblue"
         android:layout_width="57dp"
         android:layout_height="57dp"
         android:layout_marginEnd="16dp"

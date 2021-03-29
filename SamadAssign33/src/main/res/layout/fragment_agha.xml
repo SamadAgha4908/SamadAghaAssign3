@@ -11,7 +11,29 @@
     tools:context=".SamadActivity" >
 
     <Button
-        android:id="@+id/ButtonStart"
+        android:id="@+id/SamadS3"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginBottom="156dp"
+        android:onClick="startAnimationx4"
+        android:text="@string/speed4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SamadS4"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginBottom="156dp"
+        android:onClick="startAnimationx3"
+        android:text="@string/speed3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SamadButtonStart"
         android:layout_width="89dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -30,16 +52,16 @@
         android:layout_centerHorizontal="true"
         android:onClick="request"
 
-        android:text="Request Permission"
+        android:text="@string/request_permission"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/ButtonStop"
+        android:id="@+id/SamadButtonStop"
         android:layout_width="92dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="256dp"
         android:layout_marginTop="576dp"
         android:onClick="stopAnimation"
         android:text="@string/stopframe"
@@ -59,5 +81,27 @@
         app:layout_constraintEnd_toEndOf="parent">
 
     </ImageView>
+
+    <Button
+        android:id="@+id/SamadS1"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="156dp"
+        android:onClick="startAnimationx1"
+        android:text="@string/speed1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SamadS2"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="156dp"
+        android:onClick="startAnimationx2"
+        android:text="@string/speed2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

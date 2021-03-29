@@ -3,19 +3,14 @@ package samad.agha.n01364908;
 
 import android.Manifest;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.annotation.NonNull;
@@ -49,7 +44,7 @@ public class SamadActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
-        Canvasview = (CanvasView) findViewById(R.id.canvas);
+        Canvasview = (CanvasView) findViewById(R.id.samadcanvas);
 
     }
 
@@ -71,7 +66,7 @@ public class SamadActivity extends AppCompatActivity {
     public void s3(View view) { CanvasView.mPaint.setStrokeWidth(20); }
 
     public void clearCanvas(View view){
-        Canvasview = (CanvasView) findViewById(R.id.signature_canvas);
+        Canvasview = (CanvasView) findViewById(R.id.SamadDrawingcanvas);
         Canvasview.resetPath();
     }
 
@@ -89,7 +84,7 @@ public class SamadActivity extends AppCompatActivity {
         BitmapDrawable frame7 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana6);
         BitmapDrawable frame8 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana7);
 
-        int reasonableDuration = 250;
+        int reasonableDuration = 500;
         mframeAnimation = new AnimationDrawable();
         mframeAnimation.setOneShot(false);	// loop continuously
         mframeAnimation.addFrame(frame1, reasonableDuration);
@@ -106,6 +101,136 @@ public class SamadActivity extends AppCompatActivity {
         mframeAnimation.setVisible(true,true);
         mframeAnimation.start();
     }
+
+    public void startAnimationx1(View view)
+    {
+
+        ImageView img = (ImageView)findViewById(R.id.imageViewBanana);
+
+        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana0);
+        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana1);
+        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana2);
+        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana3);
+        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana4);
+        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana5);
+        BitmapDrawable frame7 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana6);
+        BitmapDrawable frame8 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana7);
+
+        int reasonableDuration = 1000;
+        mframeAnimation = new AnimationDrawable();
+        mframeAnimation.setOneShot(false);	// loop continuously
+        mframeAnimation.addFrame(frame1, reasonableDuration);
+        mframeAnimation.addFrame(frame2, reasonableDuration);
+        mframeAnimation.addFrame(frame3, reasonableDuration);
+        mframeAnimation.addFrame(frame4, reasonableDuration);
+        mframeAnimation.addFrame(frame5, reasonableDuration);
+        mframeAnimation.addFrame(frame6, reasonableDuration);
+        mframeAnimation.addFrame(frame7, reasonableDuration);
+        mframeAnimation.addFrame(frame8, reasonableDuration);
+
+        img.setBackground(mframeAnimation);
+
+        mframeAnimation.setVisible(true,true);
+        mframeAnimation.start();
+    }
+
+    public void startAnimationx2(View view)
+    {
+
+        ImageView img = (ImageView)findViewById(R.id.imageViewBanana);
+
+        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana0);
+        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana1);
+        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana2);
+        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana3);
+        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana4);
+        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana5);
+        BitmapDrawable frame7 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana6);
+        BitmapDrawable frame8 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana7);
+
+        int reasonableDuration = 500;
+        mframeAnimation = new AnimationDrawable();
+        mframeAnimation.setOneShot(false);	// loop continuously
+        mframeAnimation.addFrame(frame1, reasonableDuration);
+        mframeAnimation.addFrame(frame2, reasonableDuration);
+        mframeAnimation.addFrame(frame3, reasonableDuration);
+        mframeAnimation.addFrame(frame4, reasonableDuration);
+        mframeAnimation.addFrame(frame5, reasonableDuration);
+        mframeAnimation.addFrame(frame6, reasonableDuration);
+        mframeAnimation.addFrame(frame7, reasonableDuration);
+        mframeAnimation.addFrame(frame8, reasonableDuration);
+
+        img.setBackground(mframeAnimation);
+
+        mframeAnimation.setVisible(true,true);
+        mframeAnimation.start();
+    }
+
+    public void startAnimationx3(View view)
+    {
+
+        ImageView img = (ImageView)findViewById(R.id.imageViewBanana);
+
+        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana0);
+        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana1);
+        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana2);
+        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana3);
+        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana4);
+        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana5);
+        BitmapDrawable frame7 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana6);
+        BitmapDrawable frame8 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana7);
+
+        int reasonableDuration = 100;
+        mframeAnimation = new AnimationDrawable();
+        mframeAnimation.setOneShot(false);	// loop continuously
+        mframeAnimation.addFrame(frame1, reasonableDuration);
+        mframeAnimation.addFrame(frame2, reasonableDuration);
+        mframeAnimation.addFrame(frame3, reasonableDuration);
+        mframeAnimation.addFrame(frame4, reasonableDuration);
+        mframeAnimation.addFrame(frame5, reasonableDuration);
+        mframeAnimation.addFrame(frame6, reasonableDuration);
+        mframeAnimation.addFrame(frame7, reasonableDuration);
+        mframeAnimation.addFrame(frame8, reasonableDuration);
+
+        img.setBackground(mframeAnimation);
+
+        mframeAnimation.setVisible(true,true);
+        mframeAnimation.start();
+    }
+
+    public void startAnimationx4(View view)
+    {
+
+        ImageView img = (ImageView)findViewById(R.id.imageViewBanana);
+
+        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana0);
+        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana1);
+        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana2);
+        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana3);
+        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana4);
+        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana5);
+        BitmapDrawable frame7 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana6);
+        BitmapDrawable frame8 = (BitmapDrawable)getResources().getDrawable(R.drawable.banana7);
+
+        int reasonableDuration = 30;
+        mframeAnimation = new AnimationDrawable();
+        mframeAnimation.setOneShot(false);	// loop continuously
+        mframeAnimation.addFrame(frame1, reasonableDuration);
+        mframeAnimation.addFrame(frame2, reasonableDuration);
+        mframeAnimation.addFrame(frame3, reasonableDuration);
+        mframeAnimation.addFrame(frame4, reasonableDuration);
+        mframeAnimation.addFrame(frame5, reasonableDuration);
+        mframeAnimation.addFrame(frame6, reasonableDuration);
+        mframeAnimation.addFrame(frame7, reasonableDuration);
+        mframeAnimation.addFrame(frame8, reasonableDuration);
+
+        img.setBackground(mframeAnimation);
+
+        mframeAnimation.setVisible(true,true);
+        mframeAnimation.start();
+    }
+
+
     public void stopAnimation(View view)
     {
         mframeAnimation.stop();
@@ -117,14 +242,14 @@ public class SamadActivity extends AppCompatActivity {
         this.ImageViewearth = findViewById(R.id.earthImgView);
         this.ImageViewmoon = findViewById(R.id.moonImgView);
 
-        findViewById(R.id.startAnimBtn).setOnClickListener(v -> this._startAnimation());
+        findViewById(R.id.samadstartAnimBtn).setOnClickListener(v -> this._startAnimation());
     }
 
     public void stopmoon(View view) {
         this.ImageViewearth = findViewById(R.id.earthImgView);
         this.ImageViewmoon = findViewById(R.id.moonImgView);
 
-        findViewById(R.id.stopAnimBtn).setOnClickListener(v -> this._stopAnimation());
+        findViewById(R.id.samadstopAnimBtn).setOnClickListener(v -> this._stopAnimation());
     }
 
     private void _startAnimation() {
