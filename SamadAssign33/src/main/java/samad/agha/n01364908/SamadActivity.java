@@ -298,7 +298,7 @@ public class SamadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (ContextCompat.checkSelfPermission(SamadActivity.this,
                         Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(SamadActivity.this, "You have already granted this permission",
+                    Toast.makeText(SamadActivity.this, "This permission is already granted",
                             Toast.LENGTH_SHORT).show();
                 } else {
                     requestStoragePermission();
