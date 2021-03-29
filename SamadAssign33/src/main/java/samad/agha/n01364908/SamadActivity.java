@@ -298,7 +298,7 @@ public class SamadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (ContextCompat.checkSelfPermission(SamadActivity.this,
                         Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(SamadActivity.this, "You have already granted this permission!",
+                    Toast.makeText(SamadActivity.this, "You have already granted this permission",
                             Toast.LENGTH_SHORT).show();
                 } else {
                     requestStoragePermission();
@@ -312,7 +312,7 @@ public class SamadActivity extends AppCompatActivity {
                 Manifest.permission.READ_EXTERNAL_STORAGE)) {
             new AlertDialog.Builder(this)
                     .setTitle("Permission needed")
-                    .setMessage("This permission is needed because of this and that")
+                    .setMessage("This permission is needed because of the assignment")
                     .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
